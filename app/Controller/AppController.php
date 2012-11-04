@@ -53,11 +53,7 @@ class AppController extends Controller {
     function beforeFilter() {
         
         $this->Auth->authError = __('Login Error');
-        // 認証設定
-        if ($this->params['admin'] === true) {
-        }else{
-            $this->Auth->allow('article','index');
-            $this->Auth->allow('article','view');
-        }
+        $this->Auth->allow('article','index');
+        $this->Auth->allow('article','view');
     }
 }
