@@ -1,0 +1,8 @@
+/app/tmp/*
+/lib/Cake/*
+.project
+.settings/*
+.buildpath
+build.xml
+build.properties
+.DS_Store
